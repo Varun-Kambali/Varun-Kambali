@@ -1,0 +1,52 @@
+name: sync
+
+# Daily: refresh the "Building in public" table from each project's repo, using the
+# portfolio site's sync script. Opens a pull request and merges it only when something changed.
+on:
+  schedule:
+    - cron: "27 3 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: sync
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/checkout@v7
+        with:
+          repository: Varun-Kambali/varun-kambali.github.io
+          path: .site
+      - uses: actions/setup-node@v7
+        with:
+          node-version: 24
+
+      - name: Sync the projects table
+        run: node .site/scripts/sync.mjs --data .site/data/projects.json --readme README.md --report "$RUNNER_TEMP/sync-report.md"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Open and merge a pull request if anything changed
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          if git diff --quiet -- README.md; then
+            echo "No changes."
+            exit 0
+          fi
+          branch="sync/projects-$(date -u +%Y%m%d-%H%M)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git switch -c "$branch"
+          git add README.md
+          git commit -m "chore: sync the projects table from GitHub"
+          git push origin "$branch"
+          gh pr create --base main --head "$branch" --title "chore: sync the projects table from GitHub" --body-file "$RUNNER_TEMP/sync-report.md"
+          gh pr merge "$branch" --merge --delete-branch
