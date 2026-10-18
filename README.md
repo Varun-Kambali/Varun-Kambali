@@ -9,15 +9,15 @@
   <a href="mailto:kambalivarun@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-1C1917?style=for-the-badge&logo=gmail&logoColor=white"></a>
 </p>
 
-## Hi, I'm Varun 👋
+## Hi, I'm Varun
 
-- 🧠 **3+ years shipping production GenAI** on Google Cloud for enterprise clients in SaaS, legal and travel. Currently Senior AI Engineer at Searce.
-- 🔎 **Retrieval is my home turf:** a multi-tenant RAG platform with citation verification, and hybrid search over 10M+ screenshots, audio, video and files.
-- 🤖 **Agents that check their own work:** an NL2SQL agent whose self-correcting loop reached 92% execution accuracy on 500+ evaluation questions.
-- 🧪 **I measure before I ship:** I built the LLM-as-judge benchmarking tool that became the AI team's standard for model selection.
-- 🛠️ **Now building in public:** an MCP server, then a multi-agent planner and a fine-tuned local model, each built to ship with a committed eval suite.
+- **3+ years shipping production GenAI** on Google Cloud for enterprise clients in SaaS, legal and travel. Currently Senior AI Engineer at Searce.
+- **Retrieval is my home turf:** a multi-tenant RAG platform with citation verification, and hybrid search over 10M+ screenshots, audio, video and files.
+- **Agents that check their own work:** an NL2SQL agent whose self-correcting loop reached 92% execution accuracy on 500+ evaluation questions.
+- **I measure before I ship:** I built the LLM-as-judge benchmarking tool that became the AI team's standard for model selection.
+- **Now building in public:** an MCP server, then a multi-agent planner and a fine-tuned local model, each built to ship with a committed eval suite.
 
-## ⚔️ Arsenal
+## Arsenal
 
 | Area | Tools and patterns |
 |---|---|
@@ -28,7 +28,7 @@
 | **Google Cloud** | ![Vertex AI](https://img.shields.io/badge/Vertex_AI-1C1917?style=for-the-badge&logo=googlecloud&logoColor=F4A47C) ![Gemini Enterprise](https://img.shields.io/badge/Gemini_Enterprise-1C1917?style=for-the-badge&logo=googlegemini&logoColor=F4A47C) ![Cloud Run](https://img.shields.io/badge/Cloud_Run-1C1917?style=for-the-badge&logo=googlecloud&logoColor=F4A47C) ![Cloud Functions](https://img.shields.io/badge/Cloud_Functions-1C1917?style=for-the-badge&logo=googlecloud&logoColor=F4A47C) ![Pub/Sub](https://img.shields.io/badge/Pub%2FSub-1C1917?style=for-the-badge&logo=googlepubsub&logoColor=F4A47C) |
 | **Backend** | ![Python](https://img.shields.io/badge/Python-1C1917?style=for-the-badge&logo=python&logoColor=F4A47C) ![FastAPI](https://img.shields.io/badge/FastAPI-1C1917?style=for-the-badge&logo=fastapi&logoColor=F4A47C) ![SQL](https://img.shields.io/badge/SQL-1C1917?style=for-the-badge) ![Docker](https://img.shields.io/badge/Docker-1C1917?style=for-the-badge&logo=docker&logoColor=F4A47C) ![Streamlit](https://img.shields.io/badge/Streamlit-1C1917?style=for-the-badge&logo=streamlit&logoColor=F4A47C) ![CI/CD](https://img.shields.io/badge/CI%2FCD-1C1917?style=for-the-badge&logo=githubactions&logoColor=F4A47C) |
 
-## 🏭 Shipped in production
+## Shipped in production
 
 **Hiring for something specific?** See only the matching work on my evidence map: [RAG](https://varun-kambali.github.io/?lens=rag#evidence) · [Agents](https://varun-kambali.github.io/?lens=agents#evidence) · [Evals](https://varun-kambali.github.io/?lens=evals#evidence) · [Search](https://varun-kambali.github.io/?lens=search#evidence) · [Data & cloud](https://varun-kambali.github.io/?lens=data#evidence)
 
@@ -42,21 +42,21 @@ Client work is under NDA, so it's described at resume level. Each ID opens that 
 | [**E6**](https://varun-kambali.github.io/?line=E6#evidence) | **Multimodal enrichment**, event-driven on Gemini (Pub/Sub, Cloud Functions, BigQuery): OCR, diarized transcription, metadata | **2M+** captures/month |
 | [**E7**](https://varun-kambali.github.io/?line=E7#evidence) | **LLM evaluation tool** (async Python, LiteLLM, Streamlit) with a Gemini Flash judge on 4 criteria, plus latency and token cost | **5+** models compared in parallel; the AI team's standard for model selection |
 
-## 🚀 Building in public
+## Building in public
 
 My client code can't be shared, so these open-source projects are the code you can read. Each ships with a committed eval suite, and its headline number appears here by itself.
 
 <!-- sync:projects:start -->
 | | Project | What it is | Status | Headline result |
 |---|---|---|---|---|
-| P1 | **Nutrition MCP server** | MCP tools that give AI assistants sourced, unit-correct nutrition data, measured with and without the tools. | 🟡 In progress | Not run yet |
-| P2 | **Meal-planner multi-agent** | LangGraph agents plan a week of meals within hard limits, checked in code, traced, and gated by evals in CI. | ⚪ Next | Not run yet |
-| P3 | **Household docs vault** | Private document AI that runs locally: field extraction, expiry reminders and cited answers, on a LoRA-fine-tuned open-weight model. | ⚪ Planned | Not run yet |
+| P1 | **Nutrition MCP server** | MCP tools that give AI assistants sourced, unit-correct nutrition data, measured with and without the tools. | In progress | Not run yet |
+| P2 | **Meal-planner multi-agent** | LangGraph agents plan a week of meals within hard limits, checked in code, traced, and gated by evals in CI. | Next | Not run yet |
+| P3 | **Household docs vault** | Private document AI that runs locally: field extraction, expiry reminders and cited answers, on a LoRA-fine-tuned open-weight model. | Planned | Not run yet |
 <!-- sync:projects:end -->
 
-<sub>↻ Synced daily from each project's repo. Last change: <!-- sync:stamp:start -->18 Oct 2026<!-- sync:stamp:end --></sub>
+<sub>Synced daily from each project's repo. Last change: <!-- sync:stamp:start -->18 Oct 2026<!-- sync:stamp:end --></sub>
 
-## 🏅 Certified
+## Certified
 
 [![Google Cloud Professional ML Engineer](https://img.shields.io/badge/Google_Cloud-Professional_ML_Engineer-1C1917?style=flat-square&logo=googlecloud&logoColor=F4A47C)](https://www.credly.com/badges/fc7321c1-5f35-4efa-bbdc-9a7fc50a396c/public_url)
 [![Google Cloud Professional Data Engineer](https://img.shields.io/badge/Google_Cloud-Professional_Data_Engineer-1C1917?style=flat-square&logo=googlecloud&logoColor=F4A47C)](https://www.credly.com/badges/f01c5619-78fe-4579-b777-d2562682709d/public_url)
