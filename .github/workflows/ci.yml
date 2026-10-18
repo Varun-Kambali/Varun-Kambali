@@ -1,0 +1,28 @@
+name: ci
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  public-text:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/checkout@v7
+        with:
+          repository: Varun-Kambali/varun-kambali.github.io
+          path: .site
+      - name: No emoji or attribution lines in the README, PR text or commits
+        run: |
+          COMMITS="$(git log --format=%B ${{ github.event.pull_request.base.sha || 'HEAD~1' }}..HEAD 2>/dev/null || true)" \
+            python3 .site/scripts/check_public_text.py README.md
+        env:
+          PR_TITLE: ${{ github.event.pull_request.title }}
+          PR_BODY: ${{ github.event.pull_request.body }}
