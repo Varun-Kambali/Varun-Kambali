@@ -1,41 +1,65 @@
-# Varun Kambali
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/header-dark.svg">
+  <img alt="Varun Kambali, AI Engineer in Bengaluru: production RAG, AI agents and LLM evaluation" src="assets/header-light.svg" width="100%">
+</picture>
 
-**AI Engineer · Production RAG, AI Agents & LLM Evaluation** · Bengaluru, India
+<p align="center">
+  <a href="https://varun-kambali.github.io"><img alt="Portfolio" src="https://img.shields.io/badge/Portfolio-9A3412?style=for-the-badge&logo=githubpages&logoColor=white"></a>
+  <a href="https://www.linkedin.com/in/varunkambali"><img alt="LinkedIn" src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge"></a>
+  <a href="mailto:kambalivarun@gmail.com"><img alt="Email" src="https://img.shields.io/badge/Email-1C1917?style=for-the-badge&logo=gmail&logoColor=white"></a>
+</p>
 
-I build production LLM systems on Google Cloud (retrieval-augmented generation, agents and search) for enterprise clients in SaaS, legal and travel. 3+ years, all of it in production ML and GenAI. Currently Senior AI Engineer at Searce (formerly Cloudside Technologies).
+## Hi, I'm Varun 👋
 
-**[Portfolio](https://varun-kambali.github.io)**: an evidence map that links every skill to the work behind it · [LinkedIn](https://www.linkedin.com/in/varunkambali) · [kambalivarun@gmail.com](mailto:kambalivarun@gmail.com)
+- 🧠 **3+ years shipping production GenAI** on Google Cloud for enterprise clients in SaaS, legal and travel. Currently Senior AI Engineer at Searce.
+- 🔎 **Retrieval is my home turf:** a multi-tenant RAG platform with citation verification, and hybrid search over 10M+ screenshots, audio, video and files.
+- 🤖 **Agents that check their own work:** an NL2SQL agent whose self-correcting loop reached 92% execution accuracy on 500+ evaluation questions.
+- 🧪 **I measure before I ship:** I built the LLM-as-judge benchmarking tool that became the AI team's standard for model selection.
+- 🛠️ **Now building in public:** an MCP server, then a multi-agent planner and a fine-tuned local model, each built to ship with a committed eval suite.
 
-## Shipped in production
-Client work is under NDA, so it is described at resume level. The IDs match my resume.
+## ⚔️ Arsenal
+
+| Area | Tools and patterns |
+|---|---|
+| **LLMs & agents** | ![Gemini](https://img.shields.io/badge/Gemini-1C1917?style=for-the-badge&logo=googlegemini&logoColor=F4A47C) ![Claude](https://img.shields.io/badge/Claude-1C1917?style=for-the-badge&logo=claude&logoColor=F4A47C) ![LangGraph](https://img.shields.io/badge/LangGraph-1C1917?style=for-the-badge&logo=langgraph&logoColor=F4A47C) ![Google ADK](https://img.shields.io/badge/Google_ADK-1C1917?style=for-the-badge&logo=googlecloud&logoColor=F4A47C) ![LlamaIndex](https://img.shields.io/badge/LlamaIndex-1C1917?style=for-the-badge) ![LiteLLM](https://img.shields.io/badge/LiteLLM-1C1917?style=for-the-badge) |
+| **Patterns** | ![RAG](https://img.shields.io/badge/RAG-9A3412?style=for-the-badge) ![Agents](https://img.shields.io/badge/Agent_pipelines-9A3412?style=for-the-badge) ![NL2SQL](https://img.shields.io/badge/NL2SQL-9A3412?style=for-the-badge) ![Structured outputs](https://img.shields.io/badge/Structured_outputs-9A3412?style=for-the-badge) ![Citation verification](https://img.shields.io/badge/Citation_verification-9A3412?style=for-the-badge) |
+| **Retrieval & data** | ![PostgreSQL](https://img.shields.io/badge/PostgreSQL_%2F_PGVector-1C1917?style=for-the-badge&logo=postgresql&logoColor=F4A47C) ![BigQuery](https://img.shields.io/badge/BigQuery-1C1917?style=for-the-badge&logo=googlebigquery&logoColor=F4A47C) ![Vertex AI Vector Search](https://img.shields.io/badge/Vertex_AI_Vector_Search-1C1917?style=for-the-badge&logo=googlecloud&logoColor=F4A47C) ![FAISS](https://img.shields.io/badge/FAISS-1C1917?style=for-the-badge) ![Neo4j](https://img.shields.io/badge/Neo4j-1C1917?style=for-the-badge&logo=neo4j&logoColor=F4A47C) ![Hybrid search](https://img.shields.io/badge/Hybrid_search_(HNSW_%2B_RRF)-9A3412?style=for-the-badge) |
+| **Evaluation** | ![LLM-as-judge](https://img.shields.io/badge/LLM--as--judge-9A3412?style=for-the-badge) ![Benchmarking](https://img.shields.io/badge/Model_benchmarking-9A3412?style=for-the-badge) ![LangSmith](https://img.shields.io/badge/LangSmith-1C1917?style=for-the-badge&logo=langchain&logoColor=F4A47C) |
+| **Google Cloud** | ![Vertex AI](https://img.shields.io/badge/Vertex_AI-1C1917?style=for-the-badge&logo=googlecloud&logoColor=F4A47C) ![Gemini Enterprise](https://img.shields.io/badge/Gemini_Enterprise-1C1917?style=for-the-badge&logo=googlegemini&logoColor=F4A47C) ![Cloud Run](https://img.shields.io/badge/Cloud_Run-1C1917?style=for-the-badge&logo=googlecloud&logoColor=F4A47C) ![Cloud Functions](https://img.shields.io/badge/Cloud_Functions-1C1917?style=for-the-badge&logo=googlecloud&logoColor=F4A47C) ![Pub/Sub](https://img.shields.io/badge/Pub%2FSub-1C1917?style=for-the-badge&logo=googlepubsub&logoColor=F4A47C) |
+| **Backend** | ![Python](https://img.shields.io/badge/Python-1C1917?style=for-the-badge&logo=python&logoColor=F4A47C) ![FastAPI](https://img.shields.io/badge/FastAPI-1C1917?style=for-the-badge&logo=fastapi&logoColor=F4A47C) ![SQL](https://img.shields.io/badge/SQL-1C1917?style=for-the-badge) ![Docker](https://img.shields.io/badge/Docker-1C1917?style=for-the-badge&logo=docker&logoColor=F4A47C) ![Streamlit](https://img.shields.io/badge/Streamlit-1C1917?style=for-the-badge&logo=streamlit&logoColor=F4A47C) ![CI/CD](https://img.shields.io/badge/CI%2FCD-1C1917?style=for-the-badge&logo=githubactions&logoColor=F4A47C) |
+
+## 🏭 Shipped in production
+
+**Hiring for something specific?** See only the matching work on my evidence map: [RAG](https://varun-kambali.github.io/?lens=rag#evidence) · [Agents](https://varun-kambali.github.io/?lens=agents#evidence) · [Evals](https://varun-kambali.github.io/?lens=evals#evidence) · [Search](https://varun-kambali.github.io/?lens=search#evidence) · [Data & cloud](https://varun-kambali.github.io/?lens=data#evidence)
+
+Client work is under NDA, so it's described at resume level. Each ID opens that line on my [evidence map](https://varun-kambali.github.io), with the skills it used.
 
 | | Work | Result |
 |---|---|---|
-| E1 | **Agentic NL2SQL** for executive reporting: a self-correcting loop validates and repairs SQL before execution | 92% execution accuracy on 500+ evaluation questions, across 20 markets |
-| E3 | **Multi-tenant RAG platform** (FastAPI, PostgreSQL, Azure AD SSO) with a 4-stage agent pipeline: routing, datastore selection, grounded synthesis, citation verification | Tenant onboarding cut from 1–2 days to under 5 minutes |
-| E5 | **Hybrid search over 10M+ assets** for a screen-capture SaaS: PGVector with keyword-weighted ranking (HNSW + weighted RRF). Led 3 engineers | 10M+ screenshots, audio, video and files |
-| E6 | **Multimodal enrichment pipeline**, event-driven on Gemini (Pub/Sub, Cloud Functions, BigQuery): OCR, diarized transcription, metadata extraction | 2M+ captures/month |
-| E7 | **LLM evaluation tool** (async Python, LiteLLM, Streamlit): benchmarks models in parallel with a Gemini Flash judge on 4 criteria, plus latency and token cost | 5+ models compared at once; the AI team's standard for model selection |
+| [**E1**](https://varun-kambali.github.io/?line=E1#evidence) | **Agentic NL2SQL** for executive reporting: a self-correcting loop validates and repairs SQL before execution | **92%** execution accuracy on **500+** evaluation questions, across 20 markets |
+| [**E3**](https://varun-kambali.github.io/?line=E3#evidence) | **Multi-tenant RAG platform** (FastAPI, PostgreSQL, Azure AD SSO): routing → datastore selection → grounded synthesis → citation verification | Tenant onboarding cut from 1–2 days to **under 5 minutes** |
+| [**E5**](https://varun-kambali.github.io/?line=E5#evidence) | **Hybrid search** for a screen-capture SaaS: PGVector with keyword-weighted ranking (HNSW + weighted RRF). Led 3 engineers | **10M+** screenshots, audio, video and files |
+| [**E6**](https://varun-kambali.github.io/?line=E6#evidence) | **Multimodal enrichment**, event-driven on Gemini (Pub/Sub, Cloud Functions, BigQuery): OCR, diarized transcription, metadata | **2M+** captures/month |
+| [**E7**](https://varun-kambali.github.io/?line=E7#evidence) | **LLM evaluation tool** (async Python, LiteLLM, Streamlit) with a Gemini Flash judge on 4 criteria, plus latency and token cost | **5+** models compared in parallel; the AI team's standard for model selection |
 
-## Building in public
-My client code can't be shared, so these open-source projects are the code you can read. Each one ships with a committed eval suite, and its headline number goes here once it exists.
+## 🚀 Building in public
 
-<!-- When a project ships: link the repo and demo, and copy the headline row from its evals/results/summary.md word for word. -->
+My client code can't be shared, so these open-source projects are the code you can read. Each ships with a committed eval suite, and its headline number appears here by itself.
 
-| | Project | What it is | Status |
-|---|---|---|---|
-| P1 | Nutrition MCP server | MCP tools that give AI assistants sourced, unit-correct nutrition data for Indian and global foods, measured with and without the tools | In progress |
-| P2 | Meal-planner multi-agent | LangGraph agents plan a week of meals within calorie, protein, diet and budget limits. Macros checked in code, Langfuse traces, evals gate CI | Next |
-| P3 | Household docs vault | Private document AI on a LoRA-fine-tuned open-weight model, running locally: field extraction, expiry reminders, answers with citations | Planned |
+<!-- sync:projects:start -->
+| | Project | What it is | Status | Headline result |
+|---|---|---|---|---|
+| P1 | **Nutrition MCP server** | MCP tools that give AI assistants sourced, unit-correct nutrition data, measured with and without the tools. | 🟡 In progress | Not run yet |
+| P2 | **Meal-planner multi-agent** | LangGraph agents plan a week of meals within hard limits, checked in code, traced, and gated by evals in CI. | ⚪ Next | Not run yet |
+| P3 | **Household docs vault** | Private document AI that runs locally: field extraction, expiry reminders and cited answers, on a LoRA-fine-tuned open-weight model. | ⚪ Planned | Not run yet |
+<!-- sync:projects:end -->
 
-## Stack
-- **LLMs and agents:** Gemini, Claude, Google ADK, LangGraph, LlamaIndex, LiteLLM · RAG, NL2SQL, structured outputs
-- **Retrieval and data:** PostgreSQL/PGVector, Vertex AI Vector Search, FAISS, Neo4j, BigQuery · hybrid search (HNSW, RRF)
-- **Evaluation:** LLM-as-judge, eval datasets, model benchmarking (quality, latency, cost), LangSmith tracing
-- **Backend:** Python, SQL, FastAPI, REST APIs, SSE streaming, Docker, Git, CI/CD, Streamlit
-- **Google Cloud:** Vertex AI (Gemini API, Pipelines), Gemini Enterprise, Cloud Run, Cloud Functions, Pub/Sub, Cloud SQL
+<sub>↻ Synced daily from each project's repo. Last change: <!-- sync:stamp:start -->18 Oct 2026<!-- sync:stamp:end --></sub>
 
-## Certifications
-- Google Cloud: [Professional Machine Learning Engineer](https://www.credly.com/badges/fc7321c1-5f35-4efa-bbdc-9a7fc50a396c/public_url) · [Professional Data Engineer](https://www.credly.com/badges/f01c5619-78fe-4579-b777-d2562682709d/public_url)
-- Google Cloud Partner Specialist: [Gemini Enterprise Deployment](https://www.credly.com/badges/f5f99e6d-0f08-45de-b012-68b6bdfeef9e/public_url) · [Gemini Enterprise Agent Development](https://www.credly.com/badges/9c00a470-a883-4dbb-b8cf-a7c9ab90938d/public_url)
-- Anthropic: [Claude Certified Architect – Foundations](https://www.credly.com/badges/3fbe6b0c-df1b-4581-9262-d668d5edcb5f/public_url)
+## 🏅 Certified
+
+[![Google Cloud Professional ML Engineer](https://img.shields.io/badge/Google_Cloud-Professional_ML_Engineer-1C1917?style=flat-square&logo=googlecloud&logoColor=F4A47C)](https://www.credly.com/badges/fc7321c1-5f35-4efa-bbdc-9a7fc50a396c/public_url)
+[![Google Cloud Professional Data Engineer](https://img.shields.io/badge/Google_Cloud-Professional_Data_Engineer-1C1917?style=flat-square&logo=googlecloud&logoColor=F4A47C)](https://www.credly.com/badges/f01c5619-78fe-4579-b777-d2562682709d/public_url)
+[![Gemini Enterprise Deployment](https://img.shields.io/badge/Partner_Specialist-Gemini_Enterprise_Deployment-1C1917?style=flat-square&logo=googlegemini&logoColor=F4A47C)](https://www.credly.com/badges/f5f99e6d-0f08-45de-b012-68b6bdfeef9e/public_url)
+[![Gemini Enterprise Agent Development](https://img.shields.io/badge/Partner_Specialist-Gemini_Enterprise_Agent_Development-1C1917?style=flat-square&logo=googlegemini&logoColor=F4A47C)](https://www.credly.com/badges/9c00a470-a883-4dbb-b8cf-a7c9ab90938d/public_url)
+[![Claude Certified Architect, Foundations](https://img.shields.io/badge/Anthropic-Claude_Certified_Architect_Foundations-1C1917?style=flat-square&logo=anthropic&logoColor=F4A47C)](https://www.credly.com/badges/3fbe6b0c-df1b-4581-9262-d668d5edcb5f/public_url)
