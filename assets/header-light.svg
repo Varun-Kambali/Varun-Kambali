@@ -1,42 +1,40 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
-  <title id="title">Varun Kambali, AI Engineer</title>
-  <desc id="desc">AI Engineer in Bengaluru: production RAG, AI agents and LLM evaluation. A small map links skills to the work behind them.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="270" viewBox="0 0 1200 270" role="img" aria-labelledby="title desc">
+  <title id="title">Varun Kambali, AI Engineer in Bengaluru</title>
+  <desc id="desc">Production RAG, AI agents and LLM evaluation. A small map links skills to the resume lines behind them.</desc>
   <style>
-    .eyebrow { font: 600 16px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; letter-spacing: 0.14em; fill: #9A3412; }
-    .name { font: 700 66px Georgia, "Iowan Old Style", "Times New Roman", serif; fill: #1C1917; }
-    .type { font: 400 26px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #57534E; }
-    .prompt { font: 600 26px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #9A3412; }
-    .chip { font: 500 14px -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; fill: #1C1917; }
-    .strong { font-weight: 700; fill: #9A3412; }
-    .links path { fill: none; stroke: #C2410C; stroke-width: 1.6; stroke-linecap: round; }
+    .name { font: 600 60px -apple-system, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif; letter-spacing: -0.01em; fill: #18181B; }
+    .role { font: 500 22px -apple-system, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #18181B; }
+    .type { font: 400 22px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #52525B; }
+    .skill { font: 400 16px -apple-system, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif; fill: #18181B; }
+    .id { font: 500 14px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; fill: #18181B; }
+    .links path { fill: none; stroke: #8B8B94; stroke-width: 1.2; stroke-linecap: round; }
   </style>
-  <rect x="1" y="1" width="1198" height="278" rx="18" fill="#FBF7F0" stroke="#E5DCCF"/>
-  <text x="56" y="76" class="eyebrow">AI ENGINEER · BENGALURU</text>
-  <text x="52" y="152" class="name">Varun Kambali</text>
-  <text x="56" y="214" class="prompt">›<animate attributeName="opacity" values="1;0.25;1" dur="1.2s" repeatCount="indefinite"/></text>
-  <clipPath id="c0"><rect x="84" y="182" height="44" width="0"><animate attributeName="width" values="0;560;560;0;0" keyTimes="0;0.0650;0.1750;0.2000;1" dur="20s" begin="0s" repeatCount="indefinite"/></rect></clipPath>
-  <text x="88" y="214" class="type" clip-path="url(#c0)">production RAG with citations</text>
-  <clipPath id="c1"><rect x="84" y="182" height="44" width="0"><animate attributeName="width" values="0;560;560;0;0" keyTimes="0;0.0650;0.1750;0.2000;1" dur="20s" begin="4s" repeatCount="indefinite"/></rect></clipPath>
-  <text x="88" y="214" class="type" clip-path="url(#c1)">NL2SQL, 92% execution accuracy</text>
-  <clipPath id="c2"><rect x="84" y="182" height="44" width="0"><animate attributeName="width" values="0;560;560;0;0" keyTimes="0;0.0650;0.1750;0.2000;1" dur="20s" begin="8s" repeatCount="indefinite"/></rect></clipPath>
-  <text x="88" y="214" class="type" clip-path="url(#c2)">hybrid search over 10M+ assets</text>
-  <clipPath id="c3"><rect x="84" y="182" height="44" width="0"><animate attributeName="width" values="0;560;560;0;0" keyTimes="0;0.0650;0.1750;0.2000;1" dur="20s" begin="12s" repeatCount="indefinite"/></rect></clipPath>
-  <text x="88" y="214" class="type" clip-path="url(#c3)">LLM-as-judge evaluation</text>
-  <clipPath id="c4"><rect x="84" y="182" height="44" width="0"><animate attributeName="width" values="0;560;560;0;0" keyTimes="0;0.0650;0.1750;0.2000;1" dur="20s" begin="16s" repeatCount="indefinite"/></rect></clipPath>
-  <text x="88" y="214" class="type" clip-path="url(#c4)">building in public: MCP, agents</text>
+  <rect x="1" y="1" width="1198" height="268" rx="10" fill="#FBFBFA" stroke="#E4E4E7"/>
+  <text x="52" y="104" class="name">Varun Kambali</text>
+  <text x="56" y="146" class="role">AI Engineer in Bengaluru</text>
+  <clipPath id="c0"><rect x="54" y="178" height="44" width="0"><animate attributeName="width" values="0;560;560;0;0" keyTimes="0;0.0650;0.1750;0.2000;1" dur="20s" begin="0s" repeatCount="indefinite"/></rect></clipPath>
+  <text x="56" y="210" class="type" clip-path="url(#c0)">production RAG with citations</text>
+  <clipPath id="c1"><rect x="54" y="178" height="44" width="0"><animate attributeName="width" values="0;560;560;0;0" keyTimes="0;0.0650;0.1750;0.2000;1" dur="20s" begin="4s" repeatCount="indefinite"/></rect></clipPath>
+  <text x="56" y="210" class="type" clip-path="url(#c1)">NL2SQL, 92% execution accuracy</text>
+  <clipPath id="c2"><rect x="54" y="178" height="44" width="0"><animate attributeName="width" values="0;560;560;0;0" keyTimes="0;0.0650;0.1750;0.2000;1" dur="20s" begin="8s" repeatCount="indefinite"/></rect></clipPath>
+  <text x="56" y="210" class="type" clip-path="url(#c2)">hybrid search over 10M+ assets</text>
+  <clipPath id="c3"><rect x="54" y="178" height="44" width="0"><animate attributeName="width" values="0;560;560;0;0" keyTimes="0;0.0650;0.1750;0.2000;1" dur="20s" begin="12s" repeatCount="indefinite"/></rect></clipPath>
+  <text x="56" y="210" class="type" clip-path="url(#c3)">LLM-as-judge evaluation</text>
+  <clipPath id="c4"><rect x="54" y="178" height="44" width="0"><animate attributeName="width" values="0;560;560;0;0" keyTimes="0;0.0650;0.1750;0.2000;1" dur="20s" begin="16s" repeatCount="indefinite"/></rect></clipPath>
+  <text x="56" y="210" class="type" clip-path="url(#c4)">building in public: MCP, agents</text>
   <g class="links">
-    <path d="M931 62 C 995 62, 995 72, 1060 72" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" values="1;0;0;1" keyTimes="0;0.25;0.85;1" dur="8s" begin="0.00s" repeatCount="indefinite"/></path>
-    <path d="M931 112 C 995 112, 995 132, 1060 132" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" values="1;0;0;1" keyTimes="0;0.25;0.85;1" dur="8s" begin="0.35s" repeatCount="indefinite"/></path>
-    <path d="M931 112 C 995 112, 995 192, 1060 192" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" values="1;0;0;1" keyTimes="0;0.25;0.85;1" dur="8s" begin="0.70s" repeatCount="indefinite"/></path>
-    <path d="M931 162 C 995 162, 995 132, 1060 132" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" values="1;0;0;1" keyTimes="0;0.25;0.85;1" dur="8s" begin="1.05s" repeatCount="indefinite"/></path>
-    <path d="M931 162 C 995 162, 995 192, 1060 192" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" values="1;0;0;1" keyTimes="0;0.25;0.85;1" dur="8s" begin="1.40s" repeatCount="indefinite"/></path>
-    <path d="M931 212 C 995 212, 995 72, 1060 72" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" values="1;0;0;1" keyTimes="0;0.25;0.85;1" dur="8s" begin="1.75s" repeatCount="indefinite"/></path>
+    <path d="M915 62 C 985 62, 985 72, 1052 72" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" values="1;0;0;1" keyTimes="0;0.25;0.85;1" dur="8s" begin="0.00s" repeatCount="indefinite"/></path>
+    <path d="M915 112 C 985 112, 985 132, 1052 132" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" values="1;0;0;1" keyTimes="0;0.25;0.85;1" dur="8s" begin="0.35s" repeatCount="indefinite"/></path>
+    <path d="M915 112 C 985 112, 985 192, 1052 192" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" values="1;0;0;1" keyTimes="0;0.25;0.85;1" dur="8s" begin="0.70s" repeatCount="indefinite"/></path>
+    <path d="M915 162 C 985 162, 985 132, 1052 132" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" values="1;0;0;1" keyTimes="0;0.25;0.85;1" dur="8s" begin="1.05s" repeatCount="indefinite"/></path>
+    <path d="M915 162 C 985 162, 985 192, 1052 192" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" values="1;0;0;1" keyTimes="0;0.25;0.85;1" dur="8s" begin="1.40s" repeatCount="indefinite"/></path>
+    <path d="M915 212 C 985 212, 985 72, 1052 72" pathLength="1" stroke-dasharray="1" stroke-dashoffset="1"><animate attributeName="stroke-dashoffset" values="1;0;0;1" keyTimes="0;0.25;0.85;1" dur="8s" begin="1.75s" repeatCount="indefinite"/></path>
   </g>
-  <g><rect x="835" y="47" width="96" height="30" rx="6" fill="#FFFDF9" stroke="#E5DCCF"/><text x="883" y="67" class="chip" text-anchor="middle">RAG</text></g>
-  <g><rect x="835" y="97" width="96" height="30" rx="6" fill="#FFFDF9" stroke="#E5DCCF"/><text x="883" y="117" class="chip" text-anchor="middle">Agents</text></g>
-  <g><rect x="835" y="147" width="96" height="30" rx="6" fill="#FFFDF9" stroke="#E5DCCF"/><text x="883" y="167" class="chip" text-anchor="middle">Evals</text></g>
-  <g><rect x="835" y="197" width="96" height="30" rx="6" fill="#FFFDF9" stroke="#E5DCCF"/><text x="883" y="217" class="chip" text-anchor="middle">Search</text></g>
-  <g><rect x="1060" y="57" width="72" height="30" rx="6" fill="#F7E3D7" stroke="#9A3412"/><text x="1096" y="77" class="chip strong" text-anchor="middle">E3</text></g>
-  <g><rect x="1060" y="117" width="72" height="30" rx="6" fill="#F7E3D7" stroke="#9A3412"/><text x="1096" y="137" class="chip strong" text-anchor="middle">E1</text></g>
-  <g><rect x="1060" y="177" width="72" height="30" rx="6" fill="#F7E3D7" stroke="#9A3412"/><text x="1096" y="197" class="chip strong" text-anchor="middle">P1</text></g>
+  <text x="905" y="67" class="skill" text-anchor="end">RAG</text>
+  <text x="905" y="117" class="skill" text-anchor="end">Agents</text>
+  <text x="905" y="167" class="skill" text-anchor="end">Evals</text>
+  <text x="905" y="217" class="skill" text-anchor="end">Search</text>
+  <g><rect x="1058" y="59" width="48" height="26" rx="3" fill="#FDE68A"/><text x="1082" y="77" class="id" text-anchor="middle">E3</text></g>
+  <g><rect x="1058" y="119" width="48" height="26" rx="3" fill="#FDE68A"/><text x="1082" y="137" class="id" text-anchor="middle">E1</text></g>
+  <g><rect x="1058" y="179" width="48" height="26" rx="3" fill="#FDE68A"/><text x="1082" y="197" class="id" text-anchor="middle">P1</text></g>
 </svg>
