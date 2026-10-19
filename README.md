@@ -47,12 +47,12 @@ My client code can't be shared, so these open-source projects are the code you c
 <!-- sync:projects:start -->
 | | Project | What it is | Status | Headline result |
 |---|---|---|---|---|
-| P1 | **Nutrition MCP server** | MCP tools that give AI assistants sourced, unit-correct nutrition data, measured with and without the tools. | In progress | Not run yet |
+| P1 | **[Nutrition MCP server](https://github.com/Varun-Kambali/nutrition-mcp)** · [case study](https://github.com/Varun-Kambali/nutrition-mcp/blob/main/docs/case-study.md) | MCP server that returns sourced nutrition, glycemic load and micronutrient data for Indian dishes, in grams or household measures. | In progress | Not run yet |
 | P2 | **Meal-planner multi-agent** | LangGraph agents plan a week of meals within hard limits, checked in code, traced, and gated by evals in CI. | Next | Not run yet |
 | P3 | **Household docs vault** | Private document AI that runs locally: field extraction, expiry reminders and cited answers, on a LoRA-fine-tuned open-weight model. | Planned | Not run yet |
 <!-- sync:projects:end -->
 
-<sub>Synced daily from each project's repo. Last change: <!-- sync:stamp:start -->18 Oct 2026<!-- sync:stamp:end --></sub>
+<sub>Synced daily from each project's repo. Last change: <!-- sync:stamp:start -->19 Oct 2026<!-- sync:stamp:end --></sub>
 
 ## Certified
 
