@@ -13,7 +13,51 @@
 
 I like getting to the root of things. Give me a system that is misbehaving and I'll go looking for the bottleneck that is actually causing it, and for the pattern that isn't obvious at first glance but matters to the people who use it.
 
-I'm an AI Engineer in Bengaluru with 3+ years shipping production LLM systems on Google Cloud: retrieval, agents and evaluation for enterprise clients in SaaS, legal and travel. I'm currently a Senior AI Engineer at Searce. There's more about how I work, and the evidence behind every skill below, on my [portfolio](https://varun-kambali.github.io).
+I'm a Senior AI Engineer at Searce in Bengaluru. For 3+ years I've built LLM systems that run in production on Google Cloud (retrieval, agents, search and evaluation) for enterprise clients in SaaS, legal and travel. More about me on my [portfolio](https://varun-kambali.github.io).
+
+## What I've shipped at work
+
+**Agents and RAG that check their own work**
+
+- **92% execution accuracy on 500+ evaluation questions.** I built an NL2SQL and vector-search reporting agent for executive leadership in 20 markets. A self-correcting loop validates and repairs the SQL before it runs.
+- **Tenant onboarding cut from 1–2 days to under 5 minutes.** I architected a multi-tenant RAG platform (FastAPI, PostgreSQL, Azure AD SSO) with a 4-stage agent pipeline: routing, datastore selection, grounded synthesis and citation verification.
+
+**Search and data at scale**
+
+- **Search over 10M+ screenshots, audio, video and files.** I led 3 engineers building search for a screen-capture SaaS, moving it to PostgreSQL/PGVector with keyword-weighted hybrid ranking (HNSW + weighted RRF).
+- **2M+ captures a month made searchable.** I built the event-driven Gemini pipeline behind that search (Pub/Sub, Cloud Functions, BigQuery): OCR, speaker-labelled transcription and metadata extraction.
+- **New-market onboarding from multi-day deployments to under a minute.** I designed a config-driven, partitioned BigQuery ingestion engine for the same 20 markets, so adding one is a config change.
+
+**Evaluation and client delivery**
+
+- **The AI team's standard for choosing models.** My evaluation tool runs 5+ models in parallel on the same prompts, scores them with a Gemini Flash judge on 4 criteria, and adds latency and token cost (async Python, LiteLLM, Streamlit).
+- **An MVP that became a production engagement.** I led discovery, design and delivery of a Gemini Enterprise MVP with a custom BigQuery natural-language analytics agent over 10 datasets (100+ tables).
+
+## Open-source projects
+
+I build these in my own time, and each one ships with its own evals.
+
+<!-- sync:projects:start -->
+### [Nutrition MCP server](https://github.com/Varun-Kambali/nutrition-mcp) · shipped v1.0.0
+
+When I asked AI assistants how much protein is in 2 rotis and a katori of rajma, I got a confident number with no source and no portion. So I built an open-source MCP server that any agent can call for sourced nutrition on 41 Indian dishes and 66 ingredients, in grams or household measures. Dish values are computed in code from USDA and CoFID ingredient data and recipes I wrote, so the model never does the arithmetic.
+
+From memory, Gemini was off by 16.0% on calories. With the server's tools it used the computed totals on 26 of 26 questions. A CI gate checks 18 dishes against independent CoFID and USDA records, at 18.7% average calorie error.
+
+[Why I built it](https://github.com/Varun-Kambali/nutrition-mcp/blob/main/docs/case-study.md) · [Eval results](https://github.com/Varun-Kambali/nutrition-mcp/blob/main/evals/results/summary.md)
+
+### [Meal-planner multi-agent](https://github.com/Varun-Kambali/meal-planner-agents) · shipped v1.0.0
+
+I follow a meal plan I wrote myself. Writing the rules was quick; finding recipes that hit each meal's numbers, fit my kitchen and don't repeat was the slow part. Here you enter your plan's rules once, LangGraph agents write a week of recipes, my nutrition MCP server supplies every number, and plain Python checks each recipe and day, sending failures back for repair. Then it tracks what you actually eat against the plan.
+
+479 of 553 recipes pass every check, against 46 of 553 when a single model call writes the whole week. Evals gate CI, and the Langfuse traces mask every string except ids.
+
+[Live demo](https://varun-kambali.github.io/meal-planner-agents/) · [Why I built it](https://github.com/Varun-Kambali/meal-planner-agents/blob/main/docs/case-study.md) · [Eval results](https://github.com/Varun-Kambali/meal-planner-agents/blob/main/evals/results/summary.md)
+
+Up next: **Household docs vault**, private document AI that runs locally: field extraction, expiry reminders and cited answers, on a LoRA-fine-tuned open-weight model.
+<!-- sync:projects:end -->
+
+<sub>Updated <!-- sync:stamp:start -->10 Nov 2026<!-- sync:stamp:end --></sub>
 
 ## Arsenal
 
@@ -25,34 +69,6 @@ I'm an AI Engineer in Bengaluru with 3+ years shipping production LLM systems on
 | **Evaluation** | ![LLM-as-judge](https://img.shields.io/badge/LLM--as--judge-3F3F46?style=for-the-badge) ![Benchmarking](https://img.shields.io/badge/Model_benchmarking-3F3F46?style=for-the-badge) ![LangSmith](https://img.shields.io/badge/LangSmith-1C1917?style=for-the-badge&logo=langchain&logoColor=FDE68A) |
 | **Google Cloud** | ![Vertex AI](https://img.shields.io/badge/Vertex_AI-1C1917?style=for-the-badge&logo=googlecloud&logoColor=FDE68A) ![Gemini Enterprise](https://img.shields.io/badge/Gemini_Enterprise-1C1917?style=for-the-badge&logo=googlegemini&logoColor=FDE68A) ![Cloud Run](https://img.shields.io/badge/Cloud_Run-1C1917?style=for-the-badge&logo=googlecloud&logoColor=FDE68A) ![Cloud Functions](https://img.shields.io/badge/Cloud_Functions-1C1917?style=for-the-badge&logo=googlecloud&logoColor=FDE68A) ![Pub/Sub](https://img.shields.io/badge/Pub%2FSub-1C1917?style=for-the-badge&logo=googlepubsub&logoColor=FDE68A) |
 | **Backend** | ![Python](https://img.shields.io/badge/Python-1C1917?style=for-the-badge&logo=python&logoColor=FDE68A) ![FastAPI](https://img.shields.io/badge/FastAPI-1C1917?style=for-the-badge&logo=fastapi&logoColor=FDE68A) ![SQL](https://img.shields.io/badge/SQL-1C1917?style=for-the-badge) ![Docker](https://img.shields.io/badge/Docker-1C1917?style=for-the-badge&logo=docker&logoColor=FDE68A) ![Streamlit](https://img.shields.io/badge/Streamlit-1C1917?style=for-the-badge&logo=streamlit&logoColor=FDE68A) ![CI/CD](https://img.shields.io/badge/CI%2FCD-1C1917?style=for-the-badge&logo=githubactions&logoColor=FDE68A) |
-
-## Shipped in production
-
-**Hiring for something specific?** See only the matching work on my evidence map: [RAG](https://varun-kambali.github.io/?lens=rag#evidence) · [Agents](https://varun-kambali.github.io/?lens=agents#evidence) · [Evals](https://varun-kambali.github.io/?lens=evals#evidence) · [Search](https://varun-kambali.github.io/?lens=search#evidence) · [Data & cloud](https://varun-kambali.github.io/?lens=data#evidence)
-
-Client work is under NDA, so it's described at resume level. Each ID opens that line on my [evidence map](https://varun-kambali.github.io), with the skills it used.
-
-| | Work | Result |
-|---|---|---|
-| [**E1**](https://varun-kambali.github.io/?line=E1#evidence) | **Agentic NL2SQL** for executive reporting: a self-correcting loop validates and repairs SQL before execution | **92%** execution accuracy on **500+** evaluation questions, across 20 markets |
-| [**E3**](https://varun-kambali.github.io/?line=E3#evidence) | **Multi-tenant RAG platform** (FastAPI, PostgreSQL, Azure AD SSO): routing → datastore selection → grounded synthesis → citation verification | Tenant onboarding cut from 1–2 days to **under 5 minutes** |
-| [**E5**](https://varun-kambali.github.io/?line=E5#evidence) | **Hybrid search** for a screen-capture SaaS: PGVector with keyword-weighted ranking (HNSW + weighted RRF). Led 3 engineers | **10M+** screenshots, audio, video and files |
-| [**E6**](https://varun-kambali.github.io/?line=E6#evidence) | **Multimodal enrichment**, event-driven on Gemini (Pub/Sub, Cloud Functions, BigQuery): OCR, diarized transcription, metadata | **2M+** captures/month |
-| [**E7**](https://varun-kambali.github.io/?line=E7#evidence) | **LLM evaluation tool** (async Python, LiteLLM, Streamlit) with a Gemini Flash judge on 4 criteria, plus latency and token cost | **5+** models compared in parallel; the AI team's standard for model selection |
-
-## Building in public
-
-My client code can't be shared, so these open-source projects are the code you can read. Each ships with a committed eval suite, and its headline number appears here by itself.
-
-<!-- sync:projects:start -->
-| | Project | What it is | Status | Headline result |
-|---|---|---|---|---|
-| P1 | **[Nutrition MCP server](https://github.com/Varun-Kambali/nutrition-mcp)** · [case study](https://github.com/Varun-Kambali/nutrition-mcp/blob/main/docs/case-study.md) | MCP server that returns sourced nutrition, glycemic load and micronutrient data for Indian dishes, in grams or household measures. | Shipped v1.0.0 | [Calorie error against the dataset totals, MAPE (%): 16.0 → 0.0](https://github.com/Varun-Kambali/nutrition-mcp/blob/main/evals/results/summary.md) |
-| P2 | **[Meal-planner multi-agent](https://github.com/Varun-Kambali/meal-planner-agents)** · [case study](https://github.com/Varun-Kambali/meal-planner-agents/blob/main/docs/case-study.md) · [demo](https://varun-kambali.github.io/meal-planner-agents/) | LangGraph agents write recipes for the meal plan you already follow, check every number in code through nutrition-mcp over MCP, and track meals against it. | Shipped v1.0.0 | [Recipes passing every recipe check (share): 8.3% (46 of 553) → 86.6% (479 of 553)](https://github.com/Varun-Kambali/meal-planner-agents/blob/main/evals/results/summary.md) |
-| P3 | **Household docs vault** | Private document AI that runs locally: field extraction, expiry reminders and cited answers, on a LoRA-fine-tuned open-weight model. | Planned | Not run yet |
-<!-- sync:projects:end -->
-
-<sub>Synced daily from each project's repo. Last change: <!-- sync:stamp:start -->10 Nov 2026<!-- sync:stamp:end --></sub>
 
 ## Certified
 
